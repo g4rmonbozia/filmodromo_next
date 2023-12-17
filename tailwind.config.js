@@ -15,6 +15,9 @@ module.exports = {
         'magenta': '#ff00ff',
         'blue': '#0000ff',
       },
+      screens:{
+        'lg':'1060px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
