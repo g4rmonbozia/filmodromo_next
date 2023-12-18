@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Login() {
 	return (
         <div className="my-10 flex flex-col items-center
-						lg:flex-row lg:items-start">
+						lg:my-16 lg:flex-row lg:items-start">
 			<div className="flex flex-col items-center space-y-6">
 				<p className="text-2xl">Faça seu login</p>
 				<input placeholder="E-mail" className="pl-2 h-10 w-72 border border-gray-700 rounded"></input>
