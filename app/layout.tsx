@@ -23,8 +23,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <main className="flex flex-col items-center w-full">
           <Header onClick={handleClick}></Header>
-          <NavMenu className={toggleState}></NavMenu>        
+          <NavMenu className={toggleState}></NavMenu>
+          <div className='mt-10 lg:mt-24'>
           {children}
+          </div>
         </main>      
       </body>
     </html>
