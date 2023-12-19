@@ -1,14 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header( {onClick} ){
+export default function Header(){
     
     return(
             <div className="z-10 grid grid-cols-3 w-full h-40 bg-gray-50">
-                <div className="flex items-center justify-start">
-                    <button onClick={onClick} className="rounded-full ml-10 bg-black flex items-center justify-center w-14 h-14 lg:hidden">
-                    <svg className="fill-white w-8 h-8" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-                    </button>                
+                <div className="">               
                 </div>
                 <div className="flex items-center justify-center">
                     <Link href="/">
