@@ -1,4 +1,7 @@
+import RootLayout from '@/components/layout';
+import NavMenu from '@/components/navMenu';
 import { Metadata } from 'next';
+
 
 export const metadata: Metadata = {
   title: 'Filmódromo',
@@ -10,3 +13,4 @@ export default function Home() {
     <div>Oii</div>
 	);
 }
+
