@@ -1,12 +1,19 @@
-import RootLayout from "@/components/layout"
-import NavMenu from "@/components/navMenu"
+import { Inter } from 'next/font/google'
+import '@/app/globals.css'
+import Header from '@/components/header';
 
-export default function PageLayout({ children }) {
+const inter = Inter({ subsets: ['latin'] })
+
+export default function RootLayout({ children }) {
   return (
-    <RootLayout>      
-      <NavMenu />
-      <div className="h-10 lg:h-28 w-full"></div>
-      {children}
-    </RootLayout>
+    <html lang="en">
+      <body className={inter.className}>
+        <main className="flex flex-col items-center w-full">
+          <Header />
+          {children}
+        </main>      
+      </body>
+    </html>
   )
 }
+

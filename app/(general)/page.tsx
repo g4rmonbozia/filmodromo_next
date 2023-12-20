@@ -1,4 +1,4 @@
-import RootLayout from '@/components/layout';
+import RootLayout from '@/app/layout';
 import NavMenu from '@/components/navMenu';
 import { Metadata } from 'next';
 

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Metadata } from 'next';
 import RegisterForm from "../lib/ui/registerform";
-import RootLayout from "@/components/layout";
 
 export const metadata: Metadata = {
   title: 'Login',
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function LoginPage() {
 	return (
-		<div className="flex flex-col items-center
+		<div className="mt-10 flex flex-col items-center
 						lg:flex-row lg:items-start">
 			<div className="flex flex-col items-center space-y-6">
 				<p className="text-2xl">Faça seu login</p>
