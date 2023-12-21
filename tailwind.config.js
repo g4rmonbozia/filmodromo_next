@@ -11,7 +11,12 @@ module.exports = {
         'yellow': '#ffff00',
         'cyan': '#00ffff',
         'green': '#00ff00',
-        'red': '#ff0000',
+        'red': {
+          DEFAULT: '#ff0000',
+          400: '#ff4040',
+          300: '#ff8080',
+          200: '#ffbfbf',
+        },
         'magenta': '#ff00ff',
         'blue': '#0000ff',
       },
