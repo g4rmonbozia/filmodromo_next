@@ -20,7 +20,7 @@ export default function NavMenu(){
                         <button onClick={handleClick} className="absolute z-20 rounded-full mt-[52px] ml-10 bg-black dark:bg-white flex items-center justify-center w-14 h-14 lg:hidden">
                                 <svg className="fill-white dark:fill-black w-8 h-8" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                         </button>
-                        <div className={`z-0 duration-300 select-none flex flex-col w-full ${toggleState}
+                        <div className={`shadow z-0 duration-300 select-none flex flex-col w-full ${toggleState}
                                         lg:h-6 lg:hover:h-20 lg:mt-40 lg:flex-row`}>
                                 <Link onClick={handleClick} href="/filmes"
                                         className={`flex items-center justify-end overflow-hidden text-white bg-yellow duration-300 flex-auto h-12

@@ -18,7 +18,12 @@ module.exports = {
           200: '#ffbfbf',
         },
         'magenta': '#ff00ff',
-        'blue': '#0000ff',
+        'blue': {
+          DEFAULT: '#0000ff',
+          400: '#4040ff',
+          300: '#8080ff',
+          200: '#bfbfff',
+        },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
