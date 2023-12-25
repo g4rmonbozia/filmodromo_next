@@ -9,9 +9,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <main className="flex flex-col items-center w-full">
-          <Header />
-          {children}
-        </main>      
+            <Header />
+            {children}
+        </main>    
       </body>
     </html>
   )
