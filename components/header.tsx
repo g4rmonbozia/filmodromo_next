@@ -13,7 +13,7 @@ export default async function Header(){
                 </div>
                 <div className="flex items-center justify-center">
                     <Link href="/">
-                        <Image className="dark:brightness-200" alt="Home Page" src="/logo.png" width={120} height={126}></Image>
+                        <Image className="filter dark:brightness-200" alt="Home Page" src="/logo.png" width={120} height={126}></Image>
                     </Link>
                 </div>
                 <div className="flex items-center justify-end">
