@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function SideMenu({ sair, session }){  
@@ -24,6 +25,7 @@ export default function SideMenu({ sair, session }){
                     <div className="p-5 text-wrap text-center">Olá, {session.nome}</div>
                 </div>
                 <div className="w-full flex flex-col items-start my-4 pl-4 space-y-2">
+                    <Link href='/dashboard' onClick={handleClick}>Dashboard</Link>
                     <form className="mr-40" action={sair}>
                             <button>Logout</button>
                     </form>
