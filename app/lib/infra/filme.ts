@@ -29,8 +29,6 @@ export async function getFilmes(): Promise<QueryResult> {
 
     filmes = await sql`SELECT * FROM filme WHERE estreia IS NOT NULL`;
 
-    console.log(filmes);
-    
     return filmes;
 }
 
@@ -60,7 +58,7 @@ export async function updateNarrativa(valor: string, id: string){
 }
 
 export async function publicarFilme(id: string){
-    await sql`UPDATE filme SET estreia = ${new Date().toISOString().substring(0, 10)} WHERE id = ${id}`
+    await sql`UPDATE filme SET estreia = ${new Date().toJSON().substring(0, 10)} WHERE id = ${id}`
 }
 
 
@@ -70,7 +68,7 @@ export async function registerFilme(formData: FormData) {
 
     const { titulo, estreia, sinopse, estetica, narrativa } = CreateInvoice.parse({
         titulo: formData.get('titulo'),
-        estreia: new Date().toString(),
+        estreia: "",
         sinopse: "",
         estetica: "",
         narrativa: ""

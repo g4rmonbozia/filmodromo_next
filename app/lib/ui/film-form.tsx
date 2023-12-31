@@ -49,7 +49,7 @@ export default function FilmeForm(filme){
                 </div>
                 <div className="flex-grow flex flex-col items-center justify-start gap-5 p-5">
                     <input onChange={handleTituloChange} className="bg-transparent text-center text-5xl" name="titulo" value={titulo} />
-                    <textarea onChange={handleSinopseChange} className="bg-transparent" name="sinopse" value={sinopse} />
+                    <textarea onChange={handleSinopseChange} placeholder="Sinopse" className="bg-transparent w-80" name="sinopse" value={sinopse} />
                 </div>
                 <div className="flex h-[300px] w-[300px] md:w-[500px] flex-col justify-center items-center p-5 gap-6 bg-gray-500">
                     <p className="text-center text-2xl font-extrabold">ESCOLHA DE ELENCO E EQUIPE</p>
@@ -61,8 +61,8 @@ export default function FilmeForm(filme){
                 <div onClick={handleClick} id="narrativa" className={`${activeTab == "narrativa" ? "text-gray-500" : "" } h-full px-4 text-center text-md font-bold`}>NARRATIVA</div>
             </div>
             <div className="pb-10 flex justify-center">
-                <textarea onChange={handleEsteticaChange} className={`${activeTab != "estetica" ? "hidden" : "" } bg-transparent h-[500px] w-1/2`} name="estetica" value={estetica} />
-                <textarea onChange={handleNarrativaChange} className={`${activeTab != "narrativa" ? "hidden" : "" } bg-transparent h-[500px] w-1/2`} name="narrativa" value={narrativa} />
+                <textarea onChange={handleEsteticaChange} placeholder="Proposta Estética" className={`${activeTab != "estetica" ? "hidden" : "" } bg-transparent h-[500px] w-1/2`} name="estetica" value={estetica} />
+                <textarea onChange={handleNarrativaChange} placeholder="Narrativa" className={`${activeTab != "narrativa" ? "hidden" : "" } bg-transparent h-[500px] w-1/2`} name="narrativa" value={narrativa} />
             </div>
             <div className="h-20 px-5 fixed bottom-0 right-0 flex items-center justify-end gap-5">
                 <button onClick={handlePublicar} className="px-5 py-2 text-black bg-white rounded-md">Publicar</button>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
 	return (
-    <div>Oii</div>
+    <div>Bem-vindo ao Filmódromo!</div>
 	);
 }
 
