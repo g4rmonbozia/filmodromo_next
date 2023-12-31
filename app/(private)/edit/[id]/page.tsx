@@ -3,6 +3,8 @@ import FilmeForm from "@/app/lib/ui/film-form";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 export default async function Edit({params}:{params: {id: string}}){
     const session = await auth();
 

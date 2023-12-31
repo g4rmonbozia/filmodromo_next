@@ -3,6 +3,7 @@ import { auth } from '@/auth';
 import Poster from '@/components/poster';
 import { Metadata } from 'next';
 import Link from 'next/link';
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: 'Dashboard',

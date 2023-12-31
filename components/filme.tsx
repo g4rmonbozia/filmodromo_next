@@ -19,9 +19,9 @@ export default function FilmeLayout({filme}){
                 <div className="flex md:w-[350px] justify-center">
                     <div className="bg-gray-300 -mt-32 mb-10 w-[250px] h-[375px]"></div>
                 </div>
-                <div className="flex-grow flex flex-col items-center justify-start gap-5 p-5">
+                <div className="w-[300px] flex-grow flex flex-col items-center justify-start gap-5 p-5">
                     <p className="text-center text-5xl">{filme.titulo}</p>
-                    <div>{filme.sinopse}</div>
+                    <div className="">{filme.sinopse}</div>
                 </div>
                 <div className="flex h-[300px] w-[300px] md:w-[500px] flex-col justify-center items-center p-5 gap-6 bg-gray-500">
                     <p className="text-center text-2xl font-extrabold">ELENCO E EQUIPE</p>

@@ -11,7 +11,7 @@ export default async function Filme({params}:{params: {id: string}}){
     }
 
     return(
-        <div className="w-full">
+        <div className="-mt-20 w-full">
             <FilmeLayout filme={filmes.rows[0]} />
         </div>
     );
